@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- Bootstrap Js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">-->
+
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/996973c893.js"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--  Javascript  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous">
+    </script>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <title>Portfolio</title>
+  </head>
+
+  <!--Navigation Bar-->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg bg-none navbar-dark">
+      <a class="navbar-brand pt-2" href="#"><h4>Victor's <span class="text-warning">Portfolio</span></h4></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link text-white navigation-link" href="#"><h4>Blog</h4></a></li>
+              <li class="nav-item"><a class="nav-link text-white navigation-link" href="#"><h4>About Me</h4></a></li>
+              <li class="nav-item"><a class="nav-link text-white navigation-link" href="#"><h4>Portfolio</h4></a></li>
+              <li class="nav-item"><a class="nav-link text-white navigation-link" href="#"><h4>Resume</h4></a></li>
+    <!--            <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create Post</a>-->
+
+            </ul>
+        </div>
+    </nav>
+  </div>
+
+
+
+  <body>
+<!-- Header -->
+  <header class="masthead text-center text-white py-5">
+    <div class="masthead-content">
+      <div class="container py-3">
+        <img class="rounded-circle my-4" src="{% static '/images/vistein_avartar.jpg' %}" height="400" width="400">
+
+        <h1 class="masthead-heading mb-2">Hello, I'm <span class="text-warning m-heading">Victor Ekeleme</span></h1>
+        <h1 class="masthead-heading mb-2">Welcome to my portfolio & blog website!</h1>
+      </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+
+  </header>
+
+<!-- Social links -->
+  <div class="text-white text-center">
+    <a type="button" class="btn-floating btn-lg btn-fb"><h1><i class="fa fa-facebook"></i></h1></h1></a>
+    <a type="button" class="btn-floating btn-lg btn-email"><h1><i class="fa fa-envelope"></h1></i></a>
+    <a type="button" class="btn-floating btn-lg btn-git"><h1><i class="fa fa-github"></i></h1></a>
+    <a type="button" class="btn-floating btn-lg btn-tw"><h1><i class="fa fa-twitter"></i></h1></a>
+    <a type="button" class="btn-floating btn-lg btn-li"><h1><i class="fa fa-linkedin-square" aria-hidden="true"></i></h1></a>
+    <a type="button" class="btn-floating btn-lg btn-hk"><h1><i class="fab fa-hackerrank"></i></i></h1></a>
+  </div>
+
+<!-- About Me -->
+  <div class="container py-5">
+    <section id="" class="page-section text-white">
+      <div class="row gx-5 align-items-center">
+          <div class="col-lg-6 order-lg-2">
+              <div class="p-5"><img class="img-fluid rounded-circle" src="{% static '/images/about-me.jpg' %}" alt="..." /></div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+              <div class="p-5">
+                  <h2 class="page-section-heading display-4 text-center text-white text-uppercase mb-0">about me</h2>
+                  <h4>I am a detail-oriented, innovative, and organized professional with knoweledge and experience in developing Web-based applications, Quality Assurance/Testing and, Software Development along with the abilities of strong programming and analysis using automation tools and Manual Techniques</h4>
+                  <p></p>
+                  <p></p>
+              </div>
+          </div>
+      </div>
+
+
+    </section>
+      <div class="col-lg-12 order-lg-1 text-white text-center">
+        <div class="p-5">
+            <h2 class="page-section-heading display-6 text-center text-white text-uppercase mb-2">Technical Aptitudes</h2>
+            <h4>Automated Testing Tools & Framworks</h4>
+            <h4>CI/CD Tools</h4>
+            <h4>Big Data</h4>
+            <h4>Web Development</h4>
+            <h4>Version Control Systems</h4>
+            <h4>Database</h4>
+            <h4>Cloud Platform</h4>
+            <h4>UML Modeling</h4>
+        </div>
+      </div>
+  </div>
+
+<!-- Portfolio -->
+  <div class="container py-5">
+    <h2 class="page-section-heading display-4 text-center text-white text-uppercase mb-0">Portfolio</h2>
+    <section class="page-section" id="projects">
+
+    <div class="row justify-content-center">
+
+      <div class="col-md-6 col-lg-4 my-4">
+        <div class="card">
+          <img src="{% static '/images/vistein_avartar.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Frendzy Blog</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 my-4">
+        <div class="card">
+          <img src="{% static '/images/vistein_avartar.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">LinkedIn Course Links Generator</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 my-4">
+        <div class="card">
+          <img src="{% static '/images/vistein_avartar.jpg' %}" class="" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Virtual Network Web Application</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 my-4">
+        <div class="card">
+          <img src="{% static '/images/vistein_avartar.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Reconspider</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </section>
+  </div>
+
+<!-- Contact Me -->
+    <div class="container py-5">
+    <h2 class="page-section-heading display-4 text-center text-white text-uppercase mb-0">Contact Me</h2>
+    <section id="contact" class="page-section text-white">
+
+    </section>
+  </div>
+
+
+  </body>
+</html>
