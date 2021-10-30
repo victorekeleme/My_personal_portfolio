@@ -167,7 +167,7 @@ CLOUDINARY_STORAGE = {
 
 
 MEDIA_URL = 'media/'
-# MEIDA_ROOT = os.path.join(BASE_DIR, 'media')
+MEIDA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
