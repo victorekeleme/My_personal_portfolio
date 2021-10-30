@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'portfolioApp',
+    'cloudinary_storage',
+    'cloudinary',
 
 ]
 
@@ -135,6 +137,13 @@ USE_L10N = True
 
 USE_TZ = True
 
+# Email SMTP settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'ekelemevictor99@gmail.com'
+EMAIL_HOST_PASSWORD = 'paynen12@'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
@@ -148,8 +157,13 @@ STATICFILES_DIRS = [
 STATIC_ROOT  =   os.path.join(BASE_DIR, 'root')
 django_heroku.settings(locals())
 
-#  Add configuration for static files storage using whitenoise
-# STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME':'hn4lsvnie',
+    'API_KEY': '769254333968313',
+    'API_SECRET': 'f7iPQ-lRFZolhdan-R22de6kp3I',
+}
 
 
 MEDIA_URL = 'media/'
@@ -166,9 +180,3 @@ LOGIN_REDIRECT_URL = '/'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_USE_TLS = True
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'ekelemevictor99@gmail.com'
-EMAIL_HOST_PASSWORD = 'paynen12@'
