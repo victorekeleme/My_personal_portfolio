@@ -161,13 +161,13 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME':'hn4lsvnie',
-    'API_KEY': '769254333968313',
+    'API_KEY': '338796628816817',
     'API_SECRET': 'f7iPQ-lRFZolhdan-R22de6kp3I',
 }
 
 
 MEDIA_URL = 'media/'
-MEIDA_ROOT = os.path.join(BASE_DIR, 'media')
+# MEIDA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

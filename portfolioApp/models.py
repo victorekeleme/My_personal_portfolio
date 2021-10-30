@@ -16,7 +16,7 @@ class Project(models.Model):
     name = models.CharField(max_length=200, blank=True)
     description = models.CharField(max_length=1000, blank=True)
     url = models.URLField(max_length=200, blank=True)
-    project_img = models.ImageField(default='project.png', upload_to='project_img')
+    project_img = models.ImageField(default='project.png', upload_to='project_img/')
 
     def __str__(self):
         return f"{self.name}"
